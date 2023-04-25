@@ -9,11 +9,15 @@ import androidx.compose.ui.graphics.Color
 val Purple700 = Color(0xFFEE9972)
 
 private val LightColorPalette = lightColors(
-    primaryVariant = Purple700,
+    primaryVariant = LittleLemonColor.yellow,
+    secondary = LittleLemonColor.pink
 )
 
 @Composable
-fun LittleLemonTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+fun LittleLemonTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit
+) {
     MaterialTheme(
         colors = LightColorPalette,
         typography = Typography,
